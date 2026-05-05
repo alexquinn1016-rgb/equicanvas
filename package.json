@@ -1,0 +1,29 @@
+{
+  "name": "equicanvas",
+  "version": "1.0.0",
+  "description": "Create a canvas of your favorite horse",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=frontend\" \"npm run dev --workspace=backend\"",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "start": "npm run start --workspace=backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "keywords": [
+    "horses",
+    "ai",
+    "art",
+    "gallery",
+    "images"
+  ],
+  "author": "alexquinn1016-rgb",
+  "license": "MIT"
+}
